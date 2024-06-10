@@ -31,6 +31,8 @@ The `TrackController` is a REST controller that handles HTTP requests related to
 - `GET /api/tracks`: Fetches a list of all tracks.
 - `DELETE /api/tracks/bulk`: Deletes all tracks and updates all talks to unscheduled.
 
+-  Notes: To test with different dataset call first DELETE /api/tracks/bulk and after DELETE /api/talks/bulk
+
 # Subset Sum Finder for Talks - findSubsetSumForSession(List<Talk> talks, int targetSum) 
 
 ## Overview
