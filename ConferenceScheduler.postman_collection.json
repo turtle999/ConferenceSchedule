@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "be76edc0-140b-464f-8c76-97ec53b9ee5d",
+		"name": "ConferenceScheduler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36136804"
+	},
+	"item": [
+		{
+			"name": "api/talks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"Architecting Your Codebase 2\",\r\n        \"duration\": \"30\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/talks case example",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Architecting Your Codebase\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Overdoing it in Python\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Flavors of Concurrency in Java\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Ruby Errors from Mismatched Gem Versions\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Cloud Native Java\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"Communicating Over Distance\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"AWS Technical Essentials\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Continuous Delivery\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Monitoring Reactive Applications\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Pair Programming vs Noise\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Rails Magic\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Microservices \\\"Just Right\\\"\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Clojure Ate Scala (on my project)\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Perfect Scalability\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Apache Sparke\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Async Testing on JVM\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"A World Without HackerNews\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"User Interface CSS in Apps\",\r\n        \"duration\": \"30\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/talks NOT FITTED BLOCKS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Architecting Your Codebase\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Overdoing it in Python\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Flavors of Concurrency in Java\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Ruby Errors from Mismatched Gem Versions\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Cloud Native Java\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Communicating Over Distance\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"AWS Technical Essentials\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Continuous Delivery\",\r\n        \"duration\": \"10\"\r\n    },\r\n    {\r\n        \"title\": \"Monitoring Reactive Applications\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"Pair Programming vs Noise\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Rails Magic\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Microservices \\\"Just Right\\\"\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Clojure Ate Scala (on my project)\",\r\n        \"duration\": \"15\"\r\n    },\r\n    {\r\n        \"title\": \"Perfect Scalability\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Apache Sparke\",\r\n        \"duration\": \"20\"\r\n    },\r\n    {\r\n        \"title\": \"Async Testing on JVM\",\r\n        \"duration\": \"10\"\r\n    },\r\n    {\r\n        \"title\": \"A World Without HackerNews\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"B\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"D\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"E\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"F\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"G\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"H\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"H1\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"H2\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"H3\",\r\n        \"duration\": \"50\"\r\n    },\r\n    {\r\n        \"title\": \"H4\",\r\n        \"duration\": \"50\"\r\n    },\r\n    {\r\n        \"title\": \"H5\",\r\n        \"duration\": \"50\"\r\n    },\r\n    {\r\n        \"title\": \"H6\",\r\n        \"duration\": \"75\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/talks NOT FITTED BLOCKS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Architecting Your Codebase\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Architecting Your Codebase 2\",\r\n        \"duration\": \"98\"\r\n    },\r\n    {\r\n        \"title\": \"Flavors of Concurrency in Java\",\r\n        \"duration\": \"15\"\r\n    },\r\n    {\r\n        \"title\": \"Ruby Errors from Mismatched Gem Versions\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\r\n        \"duration\": \"77\"\r\n    },\r\n    {\r\n        \"title\": \"Cloud Native Java\",\r\n        \"duration\": \"57\"\r\n    },\r\n    {\r\n        \"title\": \"Communicating Over Distance\",\r\n        \"duration\": \"19\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/talks FITTED ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Architecting Your Codebase\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Overdoing it in Python\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Flavors of Concurrency in Java\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Ruby Errors from Mismatched Gem Versions\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"JUnit 5 - Shaping the Future of Testing on the JVM\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Cloud Native Java\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Communicating Over Distance\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"AWS Technical Essentials\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Continuous Delivery\",\r\n        \"duration\": \"10\"\r\n    },\r\n    {\r\n        \"title\": \"Monitoring Reactive Applications\",\r\n        \"duration\": \"5\"\r\n    },\r\n    {\r\n        \"title\": \"Pair Programming vs Noise\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Rails Magic\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"Microservices \\\"Just Right\\\"\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"Clojure Ate Scala (on my project)\",\r\n        \"duration\": \"15\"\r\n    },\r\n    {\r\n        \"title\": \"Perfect Scalability\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"Apache Sparke\",\r\n        \"duration\": \"50\"\r\n    },\r\n    {\r\n        \"title\": \"Async Testing on JVM\",\r\n        \"duration\": \"10\"\r\n    },\r\n    {\r\n        \"title\": \"A World Without HackerNews\",\r\n        \"duration\": \"45\"\r\n    },\r\n    {\r\n        \"title\": \"B\",\r\n        \"duration\": \"60\"\r\n    },\r\n    {\r\n        \"title\": \"D\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"E\",\r\n        \"duration\": \"30\"\r\n    },\r\n    {\r\n        \"title\": \"F\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"G\",\r\n        \"duration\": \"lightning\"\r\n    },\r\n    {\r\n        \"title\": \"H\",\r\n        \"duration\": \"lightning\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/talks/bulk Edge Case 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Architecting Your Codebase\",\r\n        \"duration\": \"180\"\r\n    },\r\n    {\r\n        \"title\": \"Overdoing it in Python\",\r\n        \"duration\": \"180\"\r\n    },\r\n    {\r\n        \"title\": \"Flavors of Concurrency in Java\",\r\n        \"duration\": \"180\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/talks/bulk Edge Case 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"title\": \"Architecting Your Codebase\",\r\n        \"duration\": \"175\"\r\n    },\r\n    {\r\n        \"title\": \"Overdoing it in Python\",\r\n        \"duration\": \"220\"\r\n    },\r\n    {\r\n        \"title\": \"Flavors of Concurrency in Java\",\r\n        \"duration\": \"60\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/tracks/schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tracks/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tracks",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/talks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/talks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/tracks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tracks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tracks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/talks/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/talks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"1"
+					]
+				},
+				"description": "### DELETE /api/talks/2\n\nThis endpoint is used to delete a specific talk with the ID 2.\n\n#### Request\n\nNo request body is required for this endpoint.\n\n#### Response\n\nThe response for this request is in the JSON format and follows the schema below:\n\n``` json\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"timestamp\": {\n      \"type\": \"string\"\n    },\n    \"status\": {\n      \"type\": \"number\"\n    },\n    \"error\": {\n      \"type\": \"string\"\n    },\n    \"path\": {\n      \"type\": \"string\"\n    }\n  }\n}\n\n ```\n\nThe response will have the following properties:\n\n- `timestamp` (string): The timestamp of the error.\n- `status` (number): The status code of the error.\n- `error` (string): The description of the error.\n- `path` (string): The path at which the error occurred."
+			},
+			"response": []
+		},
+		{
+			"name": "/api/talks/bulk",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/talks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/tracks/bulk",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tracks/bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tracks",
+						"bulk"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
